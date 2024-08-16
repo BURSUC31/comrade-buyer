@@ -1,5 +1,3 @@
-</p>An API that can collect money and sends commands to buy products where there are promotions like buy 2 products and receive 3(in this case 3 people send money to an stripe account and buy the product at the price of 2 anonymously)
-</p>
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
@@ -27,7 +25,8 @@
 
 ## Description
 
-Service that serves the user to create usual tasks with a status description and a name.
+</p>An API that can collect money and sends commands to buy products where there are promotions like buy 2 products and receive 3(in this case 3 people send money to an stripe account and buy the product at the price of 2 anonymously)
+</p>
 
 ## Installation
 
