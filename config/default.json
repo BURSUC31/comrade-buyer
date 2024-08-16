@@ -1,0 +1,18 @@
+{
+  "db": {
+    "type": "postgres",
+    "port": 5432,
+    "username": "postgres",
+    "password": "postgres",
+    "database": "postgres",
+    "host": "localhost",
+    "synchronize": true
+  },
+  "jwt": {
+    "expiresIn": "2 days",
+    "secret": "mojean"
+  },
+  "server": {
+    "port": 3000
+  }
+}
