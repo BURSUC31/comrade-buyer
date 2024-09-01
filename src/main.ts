@@ -3,12 +3,16 @@ import { AppModule } from './app.module';
 import { Logger } from '@nestjs/common';
 import * as config from 'config';
 import { ServerConfig } from 'config/config-types';
+import { NestExpressApplication } from '@nestjs/platform-express';
 
 async function bootstrap() {
   const serverConfig = config.get('server') as ServerConfig;
   const logger = new Logger('bootstrap');
 
-  const app = await NestFactory.create(AppModule);
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
+
+  app.enableCors();
+  app.useBodyParser('text');
 
   if (process.env.NODE_ENV === 'development') {
     app.enableCors();
